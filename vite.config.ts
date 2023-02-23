@@ -6,6 +6,13 @@ import vueJsx from "@vitejs/plugin-vue-jsx";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  build: {
+    lib: {
+      entry: fileURLToPath(new URL("./lib", import.meta.url)),
+      name: "TUtils",
+      fileName: "thundy-utils",
+    },
+  },
   plugins: [vue(), vueJsx()],
   resolve: {
     alias: {
