@@ -20,6 +20,6 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: git log --oneline
-      - run: node ${{ github.workspace }}./scripts/createFile.js
+      - run: node ${{ github.workspace }}/scripts/createFile.js
       - name: List files in tmp folder
-        run: ls ${{ github.workspace }}./tmp
+        run: ls ${{ github.workspace }}/tmp
