@@ -22,4 +22,4 @@ jobs:
       - run: git log --oneline
       - run: node ${{ github.workspace }}./scripts/createFile.js
       - name: List files in tmp folder
-      - run: ls ${{ github.workspace }}./tmp
+        run: ls ${{ github.workspace }}./tmp
